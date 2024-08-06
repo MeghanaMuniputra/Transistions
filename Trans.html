@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:1px solid;
+            width: 750px;
+            height:700px;
+            justify-content: center;
+            background-image: url(https://th.bing.com/th/id/R.79eb0d2cede063a7c0f8b9e7ed5d43b1?rik=0rxkA6QY6CNNuQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f2%2f7%2f8%2f1060698-vertical-stars-background-wallpaper-2880x1800-for-mobile-hd.jpg&ehk=ATeIPRuhtUHYpBAiIuKVboiD1f%2fcYL3C0VShTB%2f33gM%3d&risl=&pid=ImgRaw&r=0);
+        }
+        button{
+            padding: 20px;
+            text-shadow: 1px 0.75px 3px;
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            margin:30px;
+            color:rgb(19, 79, 87);
+            background-color: rgba(174, 119, 165, 0.893);
+            cursor: pointer;
+        }
+        button:hover{
+            justify-content: right;
+            border-top-color: rgb(83, 12, 146);
+            border-bottom-color:rgb(83, 12, 146);
+            background-color:rgb(223, 232, 236);
+
+        }
+        .container > .a1:hover ~ img{
+            transform:translatex(200px);
+        }
+        .container > .a2:hover ~ img{
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+        .container > .a3:hover ~ img{
+            transform: skew(200deg);
+        }
+        .container > .a4:hover ~ img{
+            transform: scale(1.5,1.5);
+            transition: all 2s;
+        }
+        
+        img{
+            border-radius: 50%;
+            height: 200px;
+            padding: 150px;
+            box-shadow:3px 3px;
+            transition: all 2s;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="a1">Translate</button>
+        <button class="a2">Rotate</button>
+        <button class="a3">Skew</button>
+        <button class="a4">Scale</button><br>
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20240616/pngtree-golden-star-lightning-effects-image_15867414.jpg" width="200px">
+    </div>
+</body>
+</html>
